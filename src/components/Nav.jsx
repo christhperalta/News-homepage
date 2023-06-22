@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { DataContext } from "../provider/DataProvider";
-import Hamburger from "./Hamburger";
 
 export default function Nav({ open, onToggleClick }) {
   const { header } = useContext(DataContext);

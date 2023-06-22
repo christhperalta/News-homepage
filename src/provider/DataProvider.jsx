@@ -12,16 +12,14 @@ const data = {
     ],
   },
   main: {
-    heading: { title: "The Bright Future of Web 3.0?" },
-    paragraph: {
-      title:
-        "We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?",
-    },
-    btn: { title: "READ MORE" },
+    heading: "The Bright Future of Web 3.0?",
+    paragraph:
+      "We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?",
+    btn: "READ MORE",
   },
 
   aside: {
-    heading: { title: "New" },
+    heading:  "New" ,
     content: [
       {
         id: uuidv4(),
@@ -46,6 +44,7 @@ const data = {
       {
         id: uuidv4(),
         src: "./assets/images/image-retro-pcs.jpg",
+        alt : 'image retro pcs',
         number: "01",
         title: "Reviving Retro PCs",
         paragraph: "What happens when old PCs are given modern upgrades?",
@@ -53,6 +52,7 @@ const data = {
       {
         id: uuidv4(),
         src: "./assets/images/image-top-laptops.jpg",
+        alt : 'image top laptops',
         number: "02",
         title: "Top 10 Laptops of 2022",
         paragraph: "Our best picks for various needs and budgets.",
@@ -60,6 +60,7 @@ const data = {
       {
         id: uuidv4(),
         src: "./assets/images/image-gaming-growth.jpg",
+        alt : 'image gaming growth',
         number: "03",
         title: "The Growth of Gaming",
         paragraph: "How the pandemic has sparked fresh opportunities.",

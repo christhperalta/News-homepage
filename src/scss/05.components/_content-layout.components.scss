@@ -1,0 +1,11 @@
+
+
+.ContentLayout{
+    
+
+
+    @include mq-small{
+        display: grid;
+        grid-row-gap:4rem;
+    }
+}

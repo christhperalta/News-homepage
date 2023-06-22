@@ -1,0 +1,35 @@
+.Main {
+  @include mq-small {
+    margin-top: 2rem;
+
+    &-article {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    &-h2 {
+      font-size: 40px;
+      font-family: "Inter-ExtraBold";
+      line-height: 2.5rem;
+      color: $Very-dark-blue;
+    }
+
+    &-p {
+      font-size: 0.9375rem;
+      line-height: 1.625rem;
+      color: $Dark-grayish-blue;
+    }
+
+    &-btn {
+      width: 11.5625rem;
+      height: 3rem;
+      font-size: 0.875rem;
+      font-family: "Inter-Bold";
+      line-height: 1.5rem;
+      letter-spacing: 0.2734rem;
+      color: $Off-white;
+      background-color: $Soft-red;
+    }
+  }
+}

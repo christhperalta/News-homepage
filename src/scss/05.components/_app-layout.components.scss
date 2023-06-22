@@ -3,11 +3,14 @@
 .AppLayout{
     position: relative;
     width: 100%;
+    height: 100vh;
     max-width: 90rem;
     margin: 0 auto;
+    overflow-x:hidden;
 
     @include mq-small{
         padding-left: 1rem;
         padding-right: 1rem;
+        padding-bottom: 4.6875rem;
     }
 }

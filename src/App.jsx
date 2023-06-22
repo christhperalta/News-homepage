@@ -1,12 +1,14 @@
+import AppLayout from "./components/AppLayout";
+import Header from "./components/Header";
 
 
 function App() {
-
   return (
-    <>
-    <h1>Initial commit</h1>
-    </>
-  )
+    <AppLayout>
+        <Header/>
+    </AppLayout>
+  );
 }
 
-export default App
+
+export default App;

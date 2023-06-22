@@ -1,0 +1,13 @@
+
+
+.AppLayout{
+    position: relative;
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+
+    @include mq-small{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

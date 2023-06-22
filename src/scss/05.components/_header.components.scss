@@ -1,0 +1,91 @@
+.Header {
+  
+  
+  @include mq-small {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.75rem;
+
+  &::before{
+    content: "";
+    position: absolute;
+    top: -29px;
+    left: -15px;
+    width: 100vw;
+    height: 100vh;
+    background-color:$Very-dark-blue;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+    z-index: 1;
+  }
+
+
+  &-logo{
+    flex-basis:2.8112rem;
+    height: 1.75rem;
+  }
+
+  &-hamburger{
+    flex-basis: 2.5rem;
+    height: 1.0625rem;
+
+  }
+
+
+  &-nav{
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    top: -28px;
+    right: -20px;
+    width: 16rem;
+    height: 100vh;
+    padding: 1.7063rem 1.3rem 0 1.3rem;
+    transform: translateX(100%);
+    transition:  0.3s ease-in-out;
+    background-color:$Off-white;
+    z-index: 30;
+  }
+
+  &-hamburger-close{
+     flex-basis:1.9004rem ;
+     align-self: flex-end;
+  }
+
+  &-ul{
+    flex-basis: 12.6875rem;
+    margin-top: 5.3937rem;
+  }
+
+  &-li{
+    margin-bottom: 1.5rem;
+  }
+
+  &-li:last-child{
+    margin-bottom: 0;
+  }
+
+  &-a{
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: $Dark-grayish-blue;
+  }
+
+  
+  &-nav.isActive{
+    transform: translate(0);
+    transition: 0.3s ease-in-out;
+  }
+
+  &.isActive::before{
+    opacity: 0.5;
+    visibility: visible;
+  }
+
+  }
+
+}
+

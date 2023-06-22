@@ -1,0 +1,8 @@
+@mixin mq-small {
+  @media screen and (max-width: 37.5rem) {
+    @content;
+  }
+}
+
+
+

@@ -1,38 +1,113 @@
 .Aside {
-  @include mq-small {
-    padding: 24px 20px 24px 21px;
-    background-color: $Very-dark-blue;
+  background-color: $Very-dark-blue;
+
+  &-h2 {
+    font-family: "Inter-Bold";
+    color: $Soft-orange;
+  }
+
+  &-li:first-child,
+  &-li:nth-child(2) {
+    border-bottom: 1px solid $Grayish-blue;
+  }
+
+  &-h3 {
+    font-family: "Inter-ExtraBold";
+    color: $Off-white;
+  }
+
+  &-p {
+    color: $Grayish-blue;
+  }
+
+  @include mq-Desktop {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    padding: 2rem 1.5rem 1.9375rem 1.5rem;
 
     &-h2 {
-      font-size: 2rem;
-      font-family: "Inter-Bold";
-      line-height: 2rem;
-      color: $Soft-orange;
+      font-size: 2.5rem;
+      line-height: 2.5rem;
     }
 
-    &-ul{
-        margin-top: 2.1875rem ;
+    &-ul {
+      margin-top: 2.125rem;
     }
 
     &-li:first-child,
-    &-li:nth-child(2){
-        margin-bottom: 2rem;
-        padding-bottom: 1.8125rem;
-        border-bottom: 1px solid $Grayish-blue ;
+    &-li:nth-child(2) {
+      margin-bottom: 1.875rem;
+      padding-bottom: 2.175rem;
     }
 
-    &-h3{
-        margin-bottom: .5rem;
-        font-size: 1.25rem;
-        font-family: "Inter-ExtraBold";
-        line-height: 1.5rem;
-        color: $Off-white;
+    &-h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+      line-height: 1.5rem;
     }
- 
-    &-p{
-        font-size: 15px;
-        line-height: 1.625rem;
-        color: $Grayish-blue;
+
+    &-p {
+      font-size: 0.9375rem;
+      line-height: 1.625rem;
+    }
+  }
+
+  @include mq-large {
+    margin-bottom: 4rem;
+    padding: 24px 20px 24px 21px;
+
+    &-h2 {
+      font-size: 2.4rem;
+      line-height: 2.4rem;
+    }
+
+    &-ul {
+      margin-top: 2.625rem;
+    }
+
+    &-li:first-child,
+    &-li:nth-child(2) {
+      margin-bottom: 2.4rem;
+      padding-bottom: 2.175rem;
+    }
+
+    &-h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+    }
+
+    &-p {
+      font-size: 1.125rem;
+      line-height: 1.95rem;
+    }
+  }
+
+  @include mq-small {
+    &-h2 {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+
+    &-ul {
+      margin-top: 2.1875rem;
+    }
+
+    &-li:first-child,
+    &-li:nth-child(2) {
+      margin-bottom: 2rem;
+      padding-bottom: 1.8125rem;
+    }
+
+    &-h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+    }
+
+    &-p {
+      font-size: 15px;
+      line-height: 1.625rem;
     }
   }
 }

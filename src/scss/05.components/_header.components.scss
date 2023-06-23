@@ -1,16 +1,54 @@
 .Header {
-  @include mq-small {
+  &-a {
+    color: $Dark-grayish-blue;
+  }
+
+  @include mq-Desktop {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-hamburger,
+    &-hamburger-close {
+      display: none;
+    }
+
+    &-ul {
+      display: flex;
+      gap: 2.5rem;
+    }
+
+    &-logo {
+      flex-basis: 4rem;
+    }
+
+    &-a {
+      font-size: 0.9375rem;
+      line-height: 1.625rem;
+      transition: .3s ease-in-out;
+    }
+
+    &-a:hover{
+      color: $Soft-red;
+      transition: .3s ease-out;
+    }
+  }
+
+  @include mq-large {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 1.75rem;
-    
+
     &::before {
       content: "";
       position: absolute;
-      top: -29px;
-      left: -16px;
+      top: -1.8125rem;
+      left: -1rem;
       width: 100vw;
       height: 100vh;
       background-color: $Very-dark-blue;
@@ -21,21 +59,19 @@
     }
 
     &-logo {
-      flex-basis: 2.8112rem;
-      height: 1.75rem;
+      flex-basis: 3.3rem;
     }
 
     &-hamburger {
-      flex-basis: 2.5rem;
-      height: 1.0625rem;
+      flex-basis: 3rem;
     }
 
     &-nav {
       position: absolute;
       display: flex;
       flex-flow: column nowrap;
-      top: -29px;
-      right: -20px;
+      top: -1.8125rem;
+      right: -1.25rem;
       width: 0;
       height: 100vh;
       padding: 1.7063rem 1.3rem 0 1.3rem;
@@ -46,7 +82,7 @@
     }
 
     &-hamburger-close {
-      flex-basis: 1.9004rem;
+      flex-basis: 2.1875rem;
       align-self: flex-end;
     }
 
@@ -64,14 +100,12 @@
     }
 
     &-a {
-      color: $Dark-grayish-blue;
-      text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-      font-size: 1.125rem;
-      line-height: 1.5rem;
+      font-size: 1.35rem;
+      line-height: 1.65rem;
     }
 
     &-nav.isActive {
-      width: 16rem;
+      width: 19.2rem;
       transform: translate(0);
       transition: 0.3s ease;
     }
@@ -80,6 +114,30 @@
       opacity: 0.5;
       visibility: visible;
       overflow-y: hidden;
+    }
+  }
+
+  @include mq-small {
+    &-logo {
+      flex-basis: 2.8112rem;
+    }
+
+    &-hamburger {
+      flex-basis: 2.5rem;
+    }
+
+    &-hamburger-close {
+      flex-basis: 1.9004rem;
+      align-self: flex-end;
+    }
+
+    &-a {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+    }
+
+    &-nav.isActive {
+      width: 16rem;
     }
   }
 }

@@ -1,7 +1,22 @@
-@mixin mq-small {
-  @media screen and (max-width: 37.5rem) {
+
+
+@mixin mq-Desktop{
+   @media screen  and (min-width: 64.0625rem ) {
     @content;
   }
 }
 
 
+
+
+@mixin mq-large{
+   @media screen  and (max-width:64rem) {
+    @content;
+  }
+}
+
+@mixin mq-small {
+  @media screen and (max-width: 37.5rem) {
+    @content;
+  }
+}

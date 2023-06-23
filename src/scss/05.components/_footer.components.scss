@@ -1,46 +1,115 @@
 .Footer {
-  @include mq-small {
+
+    &-ul,
+    &-article{
+        display: grid;
+    }
+
+  &-h2 {
+    font-family: "Inter-Bold";
+    color: $Grayish-blue;
+  }
+
+  &-h3 {
+    font-family: "Inter-ExtraBold";
+    color: $Very-dark-blue;
+  }
+
+  &-p {
+    color: $Dark-grayish-blue;
+  }
+
+  &-img {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    width: 6.2284rem;
+  }
+
+  @include mq-Desktop {
+    grid-column: 1 / 4;
+    grid-row: 3 /4;
+    margin-top: 0.6875rem;
     &-ul {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-auto-rows: minmax(8.0625rem, auto);
-      grid-row-gap:2rem;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 1.875rem;
     }
 
     &-article {
-
-        display: grid;
-        grid-template-columns: 6.2284rem  1fr;
-        width:100%;
-        grid-column-gap:24.35px;
+      grid-template-columns: 6.2284rem 1fr;
+      width: 100%;
+      grid-column-gap: 1.5219rem;
     }
 
-    &-img{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 4;
-        width:  6.2284rem;
+    &-h2 {
+      font-size: 2rem;
+      line-height: 2rem;
     }
 
-    &-h2{
-        font-size: 2rem;
-        font-family: "Inter-Bold";
-        line-height: 32px;
-        color: $Grayish-blue;
+    &-h3 {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
     }
 
-    &-h3{
-       font-size: 1.125rem;
-       font-family: "Inter-ExtraBold";
-       line-height: 1.5rem;
-       color: $Very-dark-blue;
+    &-p {
+      font-size: 0.9375rem;
+      line-height: 1.625rem;
+    }
+  }
+
+  @include mq-large {
+    &-ul {
+      grid-template-columns: 1fr;
+      grid-auto-rows: minmax(9.675rem, auto);
+      grid-row-gap: 2rem;
     }
 
-    &-p{
-        font-size: .9375rem;
-        line-height: 1.625rem;
-        color: $Dark-grayish-blue;
+    &-article {
+      grid-template-columns: 6.2284rem 1fr;
+      width: 100%;
+      grid-column-gap: 24.35px;
+    }
+
+    &-h2 {
+      font-size: 2.4rem;
+      line-height: 2.4rem;
+    }
+
+    &-h3 {
+      font-size: 1.35rem;
+      line-height: 1.8rem;
+    }
+
+    &-p {
+      font-size: 1.125rem;
+      line-height: 1.95rem;
+    }
+  }
+
+  @include mq-small {
+    &-ul {
+      grid-auto-rows: minmax(8.0625rem, auto);
+    }
+
+    &-article {
+      display: grid;
+      grid-template-columns: 6.2284rem 1fr;
+      width: 100%;
+      grid-column-gap: 24.35px;
+    }
+
+    &-h2 {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+
+    &-h3 {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+    }
+
+    &-p {
+      font-size: 0.9375rem;
+      line-height: 1.625rem;
     }
   }
 }

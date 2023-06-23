@@ -2,7 +2,7 @@
   background-color: $Very-dark-blue;
 
   &-h2 {
-    font-family: "Inter-Bold";
+    font-weight: $Inter-Bold;
     color: $Soft-orange;
   }
 
@@ -12,7 +12,7 @@
   }
 
   &-h3 {
-    font-family: "Inter-ExtraBold";
+    font-weight: $Inter-ExtraBold;
     color: $Off-white;
   }
 

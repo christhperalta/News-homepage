@@ -1,6 +1,6 @@
 .Main {
   &-h2 {
-    font-family: "Inter-ExtraBold";
+    font-weight: $Inter-ExtraBold;
     color: $Very-dark-blue;
   }
 
@@ -9,7 +9,7 @@
   }
 
   &-btn {
-    font-family: "Inter-Bold";
+    font-weight: $Inter-Bold;
     letter-spacing: 0.2734rem;
     color: $Off-white;
     background-color: $Soft-red;

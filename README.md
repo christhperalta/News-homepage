@@ -13,7 +13,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./public/design/Screenshot.News%20homepage.png)
+![](./public/design/News%20homepage.png)
 
 
 ### Links

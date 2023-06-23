@@ -28,7 +28,6 @@
   @include mq-Desktop {
     grid-column: 1 / 4;
     grid-row: 3 /4;
-    margin-top: 0.6875rem;
     &-ul {
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 1.875rem;
